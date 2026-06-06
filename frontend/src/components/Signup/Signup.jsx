@@ -95,7 +95,16 @@ function Signup() {
             </div>
 
              <div>
-                
+                <label htmlFor="avatar"
+                className="block text-sm font-medium text-gray-700 "
+                >
+
+                </label>
+             <div className="mt-2 flex items-center">
+                <span className="inline-block h-8 w-8 rounded-full overflow-hidden">
+
+                </span>
+             </div>
              </div>
 
             <div>
