@@ -109,7 +109,7 @@ function Login() {
             
             <div className={`${styles.normalFlex} w-full `}>
               <h4>Don't have an account?</h4>
-              <Link to="/signup" className="text-blue-600 pl-2">
+              <Link to="/sign-up" className="text-blue-600 pl-2">
               Sign Up
               </Link>
             </div>
