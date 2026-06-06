@@ -1,0 +1,20 @@
+{
+  "name": "e-shop-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghazia Huma",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongose": "^0.0.2-security",
+    "nodemailer": "^8.0.10",
+    "nodemon": "^3.1.14"
+  }
+}
