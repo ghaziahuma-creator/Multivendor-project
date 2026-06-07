@@ -12,13 +12,13 @@ function Signup() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState(null);
 
-  const handleSubmit = () => {
-    console.log("fff");
-  };
-
   const handleFileInputChange = (e) => {
     const file = e.target.files[0];
     setAvatar(file);
+  };
+
+    const handleSubmit = async (e) => {
+      
   };
 
   return (
@@ -31,7 +31,7 @@ function Signup() {
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6">
+          <form className="space-y-6" onChange={handleSubmit}>
             <div>
               <label
                 htmlFor="email"
