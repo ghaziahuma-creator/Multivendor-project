@@ -1,7 +1,7 @@
 const ErrorHandler = require("../utils/ErrorHandler");
 
 module.exports = (err, req, res, next) => {
-  err.ststusCode = err.ststusCode || 500;
+  err.statusCode = err.ststusCode || 500;
   err.message = err.message || "Internal server Error";
 
   //wrong mongodbid Error
@@ -13,7 +13,7 @@ module.exports = (err, req, res, next) => {
   //Duplicate key error
   if (err.code === 11000) {
     const message = `Duplicate key ${Object.keys(err.keyValue)} Entered`;
-    err = new ErrorHandler(messaage, 400);
+    err = new ErrorHandler(message, 400);
   }
 
   //Wrong jwt error
